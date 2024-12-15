@@ -1,0 +1,104 @@
+/* Step 8: Give the body a width - 100% and height of 100vh */
+body {
+    width: 100%;
+    height: 100vh;
+    /* Step 9: Remove the horizontal scroll with margin to 0 */
+    margin: 0;
+    /* Step 10: Set the bg_color to #1b1b32 and text to #f5f6f7 */
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    /* Step 43: Change the font and size to tahoma 16 */
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+/* Step 44: Center the h1 & p, set the margin given and align text center */
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/* Step 45: center form with '0 auto' maxwidth of 500px min of 300px set width to 60vw */
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    /* Step 63: Add a 2em padding to the bottom of the form */
+    padding-bottom: 2em;
+}
+
+/* Step 46: Used the border during dev, now remove them. Add given padding to top & bottom remove it from the left & right */
+fieldset {
+    border: 0;
+    padding: 2rem 0;
+    /* Step 47: Add element separation with a 3px bottom-border colored #3b3b4f */
+    border-bottom: 3px solid #3b3b4f;
+}
+
+/* Step 48: Use 'last-of-type' to remove the last fieldset's border */
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+/* Step 16: Change the labels from inline to block with margins of: 0.5rem 0 */
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Step 49: Set the label to appear above their inputs and add a 10px margin to the top with the rest being 0 */
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    /* Step 56: Set min height here so that it effects the select element also */
+    min-height: 2em;
+}
+
+/* Step 54: Blend inputs and textarea with colors and border given */
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    /* Step 55: Change the text color so you can see it to that given and set min-height */
+    color: #ffffff;
+    /* min-height: 2em; Left for prosperity */
+}
+
+/* Step 51: Unset the width if the inline class to make them actually inline */
+.inline {
+    width: unset;
+    /* Step 52: Set the right margin to 0.5em (rest to 0) */
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Step 53: Vertically center the inline class */
+    vertical-align: middle;
+}
+
+/* Step 57: Set the submit to block with a 60% width */
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    /* Step 58: Center the input similar to the form */
+    /* margin: 0 auto; Left for prosperity */
+    /* Step 61: Separate from the fieldset with a top/bottom margin of 1em and set a min width of 300px */
+    margin: 1em auto;
+    min-width: 300px;
+    /* Step 59: Give it the same height (2em) and set the font to 1.1rem */
+    height: 2em;
+    font-size: 1.1rem;
+    /* Step 60: Set the given colors for bg & border */
+    background-color: #3b3b4f;
+    border-color: white;
+}
+
+/* Step 62: Set the padding of the file input to be the same as the other inputs */
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+/* Step 65: Change the T&Cs link to the given color */
+a {
+    color: #dfdfe2;
+}

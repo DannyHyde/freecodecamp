@@ -1,0 +1,93 @@
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+    /* padding: 1px; Left for ref */
+    overflow: hidden;
+    filter: blur(2px);
+}
+
+.frame {
+    border: 50px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    margin: 20px auto;
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+    transform: rotate(-0.6deg);
+}
+
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 3px 3px #8f0401;
+    border-radius: 8px 10px 8px 10px;
+    transform: rotate(0.4deg);
+}
+
+.one,
+.two {
+    filter: blur(1px);
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    filter: blur(2px);
+    box-shadow: 0 0 5px 5px #b20403;
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+}
+
+/*
+----- INDEX FILE -----
+Step  8: Use the canvas class to set a width of 500px
+Step  9: Set the canvas height to 600px
+Step 10: Set the canvas bg_color to #4d0f00
+----- INDEX FILE -----
+Step 12: Use the border shorthand to give the frame class a solid black border of 50px
+Step 13: Set the width of frame to 500px
+Step 14: Use padding in frame to add a 50px gap
+Step 15: Use margin in frame to add a 20px vertical margin and horizontal of auto
+----- INDEX FILE -----
+Step 17: Target one and give it a width of 425px
+Step 18: Set the height of one to 150px
+Step 19: Set the bg-color of one to #efb762
+Step 20: Give one a margin of 20px auto
+Step 21: Add 1px padding to canvas in order to push one down
+Step 22: Adding the 1px above makes canvas 502x602. Replace the padding with overflow: hidden
+----- INDEX FILE -----
+Step 24: Give two a width of 475px
+Step 25: Give two a height of 200px
+Step 26: Set two's bg-color to #8f0401
+Step 27: Set two's margin to auto
+----- INDEX FILE -----
+Step 29: Give three a width of 91%
+Step 30: Give three a height of 28%
+Step 31: Set the bg-color to #b20403
+Step 32: Set three's margins to auto
+Step 33: Set the margin of two so that the top is 0, horizontally it's auto and the bottom is 20px
+Step 34: Use the filter property to blur the painting by 2px in the canvas
+Step 35: Create a rule to target one & two that increases the blur by 1px
+Step 36: Increase the blur of three by 2 px
+Step 37: Give one a box-shadow as 0 0 3px 3px #efb762
+Step 38: Use the same box-shadow declaration for two, but set the color to #8f0401
+Step 39: Set the box shadow of three to 0 0 5px 5px #b20403
+Step 40: Use border-radius to round one by 9px
+Step 41: For two set the top-left,bottom-right to 8px top-right and bottom-left to 10px
+Step 42: For three set the top-left to 30px, top-right to 25px, bottom-right to 60px adn bottom-left to 12px
+Step 43: Use the transform property on one to rotate it counter clockwise 0.6 degrees
+Step 44: Rotate two by 0.4 degrees clockwise
+Step 45: Rotate three counter clockwise by 0.2 degrees
+*/

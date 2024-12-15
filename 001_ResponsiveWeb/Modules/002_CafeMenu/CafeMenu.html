@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Step 1: Add DOCTYPE and html tags (emmet ftw)--->
+<head>
+    <!--- Step 2: Add the head tag (same as step 1)-->
+    <!--- Step 3: Add a meta tag with 'charset attribute'-->
+    <meta charset="UTF-8">
+    <!--- Step 17: Add the line below (for device compatibility) - done with emmet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <!--- Step 10: Create a style element-->
+    <!---<style>
+        /* Step 11: Style the h1 */
+        /* Step 12: Add the same for the h2 and p elements */
+        /* Step 13: Combine the 3 in a list */
+        /* Step 14: Move this to a separate css file (CafeMenu.css)
+        h1, h2, p {
+            text-align: center;
+        }
+    </style>-->
+    <!--- Step 15: Remove style element (left for prosperity, but commented out)-->
+    <!--- Step 16: Link to css file (normally styles.css, but this project will have a few so the corresponding css file will be named appropriately)-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--- Step 4: Add a body element-->
+<body>
+    <!--- Step 20: Add a div element and put everything so far into it and add the id "menu"-->
+    <!--- Step 27: Remove the id and add a class to the div-->
+    <!--- <div id="menu"> -->
+    <div class="menu">
+        <!--- Step 5: Add a main element-->
+        <main>
+            <!-- Step 6: Add a h1-->
+            <h1>CAMPER CAFE</h1>
+            <!--- Step 7: Add est date in a 'p' element-->
+            <!--- Add established class name-->
+            <p class="established">Est. 2020</p>
+            <!--- Step 66: Ad a 'hr' element to divide sections-->
+            <hr>
+            <!--- Step 8: Add a section, for coffees-->
+            <section>
+                <!--- Step 9: Create a h2-->
+                <h2>Coffee</h2>
+                <!--- Step 88: Add an image-->
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon">
+                <!--- Step 29: Add an article element-->
+                <!--- Step 36: Add a class name to the article element to get the 'p' elements on the same line-->
+                <article class="item">
+                    <!--- Step 30: Nest 2 'p' elements-->
+                    <!--- Step 32: Add a class name to the coffee 'p'-->
+                    <!--- Step 34: Add a class name to price 'p'-->
+                    <!--- Step 40: Put the 2 'p' elements on the same line in the editor-->
+                    <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+                </article>
+                <!--- Step 31: Add 4 more coffee/price article pairs-->
+                <!--- Step 42: Now apply the item class to the rest of the articles-->
+                <!--- Step 43: Put the 'p' elements on the same line-->
+                <!--- Step 44: Add the flavor and price classes-->
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p><p class="price">4.50</p>
+                </article>
+            </section>
+            <!--- Step 46: Add a 2nd section for desserts-->
+            <section>
+                <!--- Step 47: Add a h2-->
+                <h2>Desserts</h2>
+                <!--- Step 90: Add an image-->
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon">
+                <!--- Step 48: Add an article witrh the item class-->
+                <article class="item">
+                    <!--- Step 49: Nest 2 'p' elements-->
+                    <!--- Step 50: Add the classes 'dessert' and 'price' to the 'p' elements-->
+                    <p class="dessert">Donut</p><p class="price">1.50</p>
+                </article>
+                <!--- Step 52: Add 3 more article elements-->
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+                </article>
+            </section>
+        </main>
+        <!--- Step 63: Add a footer after the main element-->
+        <!--- Step 71: Add a 'hr' element between the main and the footer-->
+        <hr class="bottom-line">
+        <footer>
+            <!--- Step 64: Nest a 'p' with an anchor to a blank target-->
+            <p><a href="https://www.freecodecamp.org" target="_blank">Visit our website</a></p>
+            <!--- Step 65: Add a 'p' with an address-->
+            <!--- Step 87: Add the address class name-->
+            <p class="address">123 Free Code Camp Drive</p>
+        </footer>
+    </div>
+</body>
+</html>

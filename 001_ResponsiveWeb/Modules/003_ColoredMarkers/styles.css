@@ -1,0 +1,191 @@
+/* Step 8: Style the h1 (center the text) */
+h1 {
+    text-align: center;
+    /* Step 37: Set the bg_color to cyan with rgb */
+    /* Step 40: Remove the bg_bolor of the h1 */
+    /* background-color: rgb(0, 255, 255); -- Left for prosperity*/
+}
+
+/* Step 21: Target the container and make it's bg_color to black */
+.container {
+    /* background-color: rgb(0, 0, 0); -- Left for prosperity */
+    /* Step 25: Use padding to add 10px to the top and bottom of the container div */
+    padding: 10px 0;
+    /* Step 27: Set rgb values to max */
+    background-color: rgb(255, 255, 255);
+}
+
+/* Step 11: Add a rule making the first 'marker' bg_color to red */
+.marker {
+    /* Step 17: Remove the bg_color from the marker class */
+    /* background-color: red; -- Left in for prosperity */
+    /* Step 12: Set the marker height to 25px and width to 200px */
+    height: 25px;
+    width: 200px;
+    /* Step 13: Center the marker with the margin property */
+    /* margin: auto; */
+    /* Step 15: Add a 10px gap to the top/bottom of the margin property */
+    margin: 10px auto;
+}
+
+/* Step 78: Set the cap and sleeve to inline-blocks so they are next to each other */
+.cap, .sleeve {
+    display: inline-block;
+}
+
+/* Step 71: Set the width of sleeve to 110px and the height to 25px */
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /* Step 72: Set the bg-color to white */
+    background-color: white;
+    /* Step 73: Set opacity to 0.5 */
+    /* Step 74: Remove opacity */
+    /* opacity: 0.5; -- Left for prosperity */
+    /* Step 82: Combine below in border-left shorthand */
+    /* Step 75: Use alpha channel to set a 50% opacity white sleeve */
+    background-color: rgba(255, 255, 255, 50%);
+    /* Step 82: Combine below in border-left shorthand */
+        /* Step 79: Set the left border of the sleeve to 10px */
+        /* border-left-width: 10px; */
+        /* Step 80: Set the border to solid */
+        /* border-left-style: solid; */
+        /* Step 81: Set the border color to black */
+        /* border-left-color: black; */
+    /* border-left: 10px solid black; -- Left for prosperity */
+    /* Step 83: Change the border from solid to double */
+    /* border-left: 10px double black; -- Left for prosperity */
+    /* Step 84: Use rgba with 75% in border-left */
+    border-left: 10px double rgba(0, 0, 0, 75%);
+}
+
+/* Step 77: For cap, set width to 60px and height to 25px */
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+/* Step 18: Set the bg_color for one to red */
+/* Step 34: Set one to charteruse green(green + yellow)
+            Set two to azure (blue + cyan)
+            Set three to rose (red + magenta) */
+/* Step 35: Set all colors to black */
+/* Step 36: Set one to red and two to cyan */
+/* Step 38: Set one to black and two to red */
+/* Step 42: Update class one to red */
+/* Step 65: Remove the 180deg (this is default) from red & green */
+.red { /* HAS BEEN CHANGED FROM ONE TO RED */
+    /* background-color: red; -- Left for prosperity */
+    /* Step 22: Set the bg_color to red withy RGB */
+    /* background-color: rgb(255, 0, 0); -- Left for prosperity */
+    /* Step 28: Change one to yellow with red and green at max */
+    /* background-color: rgb(255, 255, 0); -- Left for prosperity */
+    /* Step 31: Set one to orange (max red, mid green) */
+    /* background-color: rgb(255, 127, 0); -- Left for prosperity */
+    /* background-color: rgb(127, 255, 0); -- Left for prosperity */
+    /* background-color: rgb(0, 0, 0); -- Left for prosperity */
+    /* background-color: rgb(255, 0, 0); -- Left for prosperity */
+    /* background-color: rgb(0, 0, 0); -- Left for prosperity */
+    /* Step 43: Set color to red */
+    /* background-color: rgb(255, 0, 0); -- Left for prosperity */
+    /* Step 49: Change background-color to background */
+    /* background: rgb(255, 0, 0); -- Left for prosperity */
+    /* Step 50: Pass linear-gradient to background with 90deg */
+    /* background: linear-gradient(90deg); -- Left for prosperity */
+    /* Step 51: Pass rgb red to linear-gradient */
+    /* background: linear-gradient(90deg, rgb (255, 0, 0)); -- Left for prosperity */
+    /* Step 52: Add green as the second argument to linear-gradient */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0)); -- Left for prosperity */
+    /* Step 53: Add blue as a third argument to linear-gradient */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255)); -- Left for prosperity */
+    /* Step 54: Add a 75% color stop after the first color */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255)); -- Left for prosperity */
+    /* Step 55: Set the gradient direction to 180deg */
+    /* background: linear-gradient(180deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255)); -- Left for prosperity */
+    /* Step 56: set color stops to 0%, 50% & 100% */
+    /* background: linear-gradient(180deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%); -- Left for prosperity */
+    /* Step 57: change red to 122, 74, 14 */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%); -- Left for prosperity */
+    /* Step 58: Change 2nd color to 245, 62, 113 */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(0, 0, 255) 100%); -- Left for prosperity */
+    /* Step 59: Change 3rd to 162, 27, 27 */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); -- Left for prosperity */
+    /* Step 64 Remove color stops */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); -- Left for prosperity */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* Step 86: Add a box-shadow to red with x=5px, y=5px and red color */
+    /* box-shadow: 5px 5px red; -- Left for prosperity */
+    /* Step 87: Change the shadow to -5s */
+    /* box-shadow: -5px -5px red; -- Left for prosperity */
+    /* Step 90: Set box-shadow to 0px 0px 20px 0px red */
+    /* box-shadow: 0px 0px 20px 0px red; -- Left for prosperity */
+    /* Step 91: Replace named color with rgba 83, 14, 14, 0.8 */
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+}
+
+/* Step 20: Set tow to green and three to blue */
+/* Step 23: Change two & three to RGB colors */
+/* Step 45: Set two/three to green/blue */
+/* Step 92: Set both green and blue box-shadow to 0px 0px 20px 0px (colors later) */
+.green { /* HAS BEEN CHANGED FROM TWO TO GREEN */
+    /* background-color: green; -- Left for prosperity */
+    /* background-color: rgb(0, 255, 0); -- Left for prosperity */
+    /* Step 24: Lower the intensity of the green to 127 */
+    /* background-color: rgb(0, 127, 0); -- Left for prosperity */
+    /* Step 26: Set green back to pure */
+    /* background-color: rgb(0, 255, 0); -- Left for prosperity */
+    /* Step 29: Set two to cyan (max green and blue) */
+    /* background-color: rgb(0, 255, 255); -- Left for prosperity */
+    /* Step 32: Set two to spring green (max green, mid blue */
+    /* background-color: rgb(0, 255, 127);-- Left for prosperityb */
+    /* background-color: rgb(0, 127, 255); -- Left for prosperity */
+    /* background-color: rgb(0, 0, 0); -- Left for prosperity */
+    /* background-color: rgb(0, 255, 255); -- Left for prosperity */
+    /* background-color: rgb(255, 0, 0); -- Left for prosperity */
+    /* Step 39: Set two to black */
+    /* background-color: rgb(0, 0, 0); -- Left for prosperity */
+    /* Step 46: Set bg_color to green with HEX */
+    /* background-color: #00FF00; -- Left for prosperity */
+    /* Step 47: Lower the intensity with 7F */
+    /* background-color: #007F00; -- Left for prosperity */
+    /* Step 60: Change background-color to background */
+    /* background: #007F00; -- Left for prosperity */
+    /* Step 61: Add 180 linear-gradient with color #55680D */
+    /* background: linear-gradient(180deg, #55680D); -- Left for prosperity */
+    /* Step 62: Add second color of #71F53E */
+    /* background: linear-gradient(180deg, #55680D, #71F53E); -- Left for prosperity */
+    /* Step 63: Add 3rd color of #116C31 */
+    /* background: linear-gradient(180deg, #55680D, #71F53E, #116C31); -- Left for prosperity */
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    /* Step 88: Add a box-shadow 5px 5px & 5px blur green */
+    /* box-shadow: 5px 5px 5px green; -- Left for prosperity */
+    /* box-shadow: 0px 0px 20px 0px green; -- Left for prosperity */
+    /* Step 93: Change the shadow color to #3B7E20CC */
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue { /* HAS BEEN CHANGED FROM THREE TO BLUE */
+    /* background-color: blue; -- Left for prosperity */
+    /* background-color: rgb(0, 0, 255); -- Left for prosperity */
+    /* Step 30: Set three to magenta (max red and blue) */
+    /* background-color: rgb(255, 0, 255); -- Left for prosperity */
+    /* Step 33: Set three to violet (max blue, mid red */
+    /* background-color: rgb(127, 0, 255); -- Left for prosperity */
+    /* background-color: rgb(255, 0, 127); -- Left for prosperity */
+    /* background-color: rgb(0, 0, 0);  -- Left for prosperity */
+    /* Step 48: Use hsl to set the color to blue */
+    /* background-color: hsl(240, 100%, 50%); -- Left for prosperity */
+    /* Step 66: Change bg-color to just bg */
+    /* background: hsl(240, 100%, 50%); -- Left for prosperity */
+    /* Step 67 Add linear-gradient and use hsl 186, 76%, 16% for the 1st color */
+    /* background: linear-gradient(hsl(186, 76%, 16%)); -- Left for prosperity */
+    /* Step 68: Add hsl 223, 90%, 60% for the 2nd color */
+    /* background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%)); -- Left for prosperity */
+    /* Step 69: Add hsl 240, 56%, 42% as 3rd color */
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* Step 89: Add box-shadow of 0px 0px 0px & 5px spread blue */
+    /* box-shadow: 0px 0px 0px 5px blue; -- Left for prosperity */
+    /* box-shadow: 0 0 20px 0 blue; -- Left for prosperity */
+    /* Step 94: Change the color to hsla 223 59% 31% 0.8 */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}

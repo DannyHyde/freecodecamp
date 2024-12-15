@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 0 -4px 0;
+    letter-spacing: 0.15px;
+}
+
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.large {
+    height: 10px;
+}
+
+.large,
+.medium {
+    background-color: black;
+    border: 0;
+}
+
+.small-text {
+    font-size: 0.85rem;
+}
+
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.calories-info h2 {
+    margin: 0;
+}
+
+.left-container p {
+    margin: -5px -2px -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.calories-info span {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: -7px -2px;
+}
+
+.medium {
+    height: 5px;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.double-indent {
+    margin-left: 2em;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0 5px 0;
+    padding: 0 8px 0 8px;
+    text-indent: -8px;
+}
+
+/* .daily-value p {
+    border-bottom: 1px solid #888989;
+} Left for ref */
+
+/*
+----- HTML -----
+Step  5: Create a body selector and set the font family to open-sans with a sans-serif fallback
+Step  6: Create a html selector and set the font-size to 16px
+----- HTML -----
+Step  8: Create a .label selector and give it a border of 2px solid black
+Step  9: Set .label width to 270px
+Step 10: Set .label margin to 20px auto and the padding to 0 7px
+Step 11: Create a * selector and set box-sizing to border-box
+Step 12: Create a h1 selector and set the font-weight to 800px (bold)
+Step 13: Center the h1
+Step 14: Fine tune with a top and bottom margin of -4px and 0 for the top and bottom
+Step 15: Create a p selector and remove all margins
+----- HTML -----
+Step 17: Add a .divider selector and set the bottom-border to 1px solid #888989 and a bottom margin of 2px 0
+Step 18: Give the h1 a letter-spacing of 0.15px
+----- HTML -----
+Step 20: Add a selector for the bold class and set the weight to 800 (remove the weight from the h1 selector too)
+----- HTML -----
+Step 23: In the p element set the display to flex and justify with space-between
+----- HTML -----
+Step 25: Add header to the h1 selector do that it specifically targets the header h1
+----- HTML -----
+Step 27: Create a .large selector give it a height of 10px
+         Create a .large, .medium selector with a bg-color of black
+Step 28: Remove the bottom border by adding border 0 to the .large,.medium selector
+----- HTML -----
+Step 31: Create a .small-text selector, set the font-size to 0.85rem
+Step 32: Create a .calories-info h2 selector and remove the margins
+----- HTML -----
+Step 34: Target .calories-info Set display to flex, justify as space-between and align-items as flex-end
+Step 35: Target left-container p and set the top & bottom margin to -5px, the left & right to -2px
+         Set the font-size to 2em and the weight to 700
+Step 36: Target the .calories-info span and set the font size to 2.4em with a weight of 700
+Step 37: Set the span margin to -7px -2px (to move the 230 into place)
+----- HTML -----
+Step 39: Create .medium and give it a height of 5px
+----- HTML -----
+Step 41: Create a .right and justify the content to the right
+----- HTML -----
+Step 47: Create .indent and give it a margin-left of 1em
+Step 48: Create a .daily-value p and give it border-bottom 1px solid #888989
+----- HTML -----
+Step 50: Modify .daily-value p to exclude the .no-divider elements with a ':not()'
+----- HTML -----
+Step 60: Target double-indent class and give a left margin of 2em
+----- HTML -----
+Step 67: Target note class and set font size to 0.6rem and set top & bottom margins to 5px and remove the left & right
+Step 68: Give note a padding of 8px and set text-indent to -8px
+
+*/

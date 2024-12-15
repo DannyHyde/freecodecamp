@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Label</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="label">
+        <header>
+            <h1 class="bold">Nutrition Facts</h1>
+            <div class="divider"></div>
+            <p>8 servings per container</p>
+            <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+        </header>
+        <div class="divider large"></div>
+        <div class="calories-info">
+            <div class="left-container">
+                <h2 class="bold small-text">Amount per serving</h2>
+                <p>Calories</p>
+            </div>
+            <span>230</span>
+        </div>
+        <div class="divider medium"></div>
+        <div class="daily-value small-text">
+            <p class="bold right no-divider">% Daily Value *</p>
+            <div class="divider"></div>
+            <p><span><span class="bold">Total Fat</span> 8g </span><span class="bold">10%</span></p>
+            <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+            <div class="divider"></div>
+            <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+            <div class="divider"></div>
+            <p><span><span class="bold">Cholesterol</span> 0mg</span><span class="bold"> 0%</span></p>
+            <p><span><span class="bold">Sodium</span> 160mg</span><span class="bold">7%</span></p>
+            <p><span><span class="bold">Total Carbohydrate</span> 37g</span><span class="bold">13%</span></p>
+            <p class="indent no-divider">Dietary Fiber 4g</p>
+            <div class="divider"></div>
+            <p class="indent no-divider">Total Sugars 12g</p>
+            <div class="divider double-indent"></div>
+            <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+            <div class="divider"></div>
+            <p class="no-divider"><span><span class="bold">Protein</span> 3g</span></p>
+            <div class="divider large"></div>
+            <p>Vitamin D 2mcg <span>10%</span></p>
+            <p>Calcium 260mg <span>20%</span></p>
+            <p>Iron 8mg <span>45%</span></p>
+            <p class="no-divider">Potassium 235mg <span>6%</span></p>
+        </div>
+        <div class="divider medium"></div>
+        <p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. </p>
+    </div>
+</body>
+</html>
+
+
+<!--- 
+Step  1: Create a h1 (Nutrition Facts) in the body
+Step  2: Below the h1 add a p with the text 8 servings per container
+Step  3: Add another p - Serving size 2/3 cup (55g)
+Step  4: Add a stylesheet link with the href set to https://fonts.googleapis.com/css?family=Open+Sans:400,700,800.
+         Add a second link to the css file
+----- CSS -----
+Step  7: Wrap the h1 and p in a div with the class label
+----- CSS -----
+Step 16: Add a div below the h1 with a class of divider
+----- CSS -----
+Step 19: Give the 2nd p element the class of bold
+----- CSS -----
+Step 21: Add the bold class to the h1
+Step 22: Wrap text '2/3 cup (55g)' in a span
+----- CSS -----
+Step 24: Wrap everything within label div in a new header element
+----- CSS -----
+Step 26: Create a new div below the header and set the class to 'divider large'
+----- CSS -----
+Step 29: Create a new div below large and give it the class calories-info
+Step 30: Within calories-info add a div (class left-container)
+         Add a h2 (Amount per serving) give the h2 a class 'bold small-text'
+----- CSS -----
+Step 33: Below small-text add a new p (Calories) And below the left-container create a span with the text 230
+----- CSS -----
+Step 38: Below calories-info add a div with class 'divider medium'
+----- CSS -----
+Step 40: Create a new div below medium set the class to 'daily-value small-text'
+         Put in a p with the class 'bold right' and the text '%Daily Value *'
+----- CSS -----
+Step 42: Using the preexisting divider add another below the 'daily-value' p
+Step 43: Add another p after the divide with the text 'Total Fat 8g 10%' wrap all bar the 8g in spans with the class bold
+Step 44: Nest 'Total Fat 8g' in another span for alignment
+Step 45: Below 'Total fat' add another p with the text 'Saturated Fat 1g 5%' and wrap the 5% in a span with class bold
+Step 46: Give the new p a class of indent
+----- CSS -----
+Step 49: Add class 'no-divider' to 'Daily Value' and 'Saturated Fat'
+----- CSS -----
+Step 51: Create a divider div below the 2nd .no-divider
+Step 52: After the last .divide add a p text 'Trans Fat 0g' Italicize the word Trans with an i element
+         Give the new p a class of 'indent no-divider' then wrap the text in a span for alignment
+Step 53: Add another divider div below last p
+Step 54: Add another p 'Cholesterol 0mg 0%' span 'Cholesterol' & '0%' with the class bold. Then nest in another span for alignment
+Step 55: Same as above text 'Sodium 160mg 7%'
+Step 56: Same as above text 'Total Carbohydrate 37g 13%'
+Step 57: Add a p 'Dietary Fiber 4g' add classes to indent and remove the divider, then add a separate divider div below
+Step 58: Create a p 'Total Sugars 12g' indent and no-divider, then add a divider below it
+Step 59: Add double-indent class to the last divider
+----- CSS -----
+Step 61: After double-indent add p 'Includes 10g Added Sugars 20%' double-indent this too and make the 20% bold then add a divider
+Step 62: Add p 'Protein 3g' remove the bottom border, make protein bold and wrap in a span then add a divider
+Step 63: New p 'Vitamin D 2mcg 10%' wrap 10% in a span
+Step 64: New p 'Calcium 260mg 20%' span teh 20%. New p 'Iron 8mg 45%' and span the %age
+Step 65: Last p 'Potassium 235mg 6%', span the 6% and remove the bottom border
+Step 66: Add a medium divider below daily-value, add a p with the following text:
+         * The % Daily Value (DV) tells you how much a nutrient in a serving of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice. 
+----- CSS -----
+-->

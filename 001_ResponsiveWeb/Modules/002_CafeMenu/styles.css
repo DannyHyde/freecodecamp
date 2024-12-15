@@ -1,0 +1,140 @@
+/* Step 18: Change the background color of the body to brown */
+/* Step 19: Change the bg_color to burlywood */
+/* Step 22: Comment out the bg_color */
+body {
+    /* background-color: burlywood; */
+    /* Step 28: Remove the bg_color comment and add a background image */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /* Step 57: Set the font to sans-serif */
+    font-family: sans-serif;
+    /* Step 72: Add spacing with 20px padding */
+    padding: 20px;
+}
+/* Step 62 : Set the font size of the h1 (40px) & h2 (30px) */
+h1 {
+    font-size: 40px;
+    /* Step 84: Remove the default top margin */
+    margin-top: 0;
+    /* Step 85: Adjust bottom margin to 15px */
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 30px;
+}
+/* Step 60: Italicize 'Est 2020' with established class */
+.established {
+    font-style: italic;
+}
+/* Step 14: Add current styles to this file */
+h1, h2, p {
+    text-align: center;
+}
+/* Step 21: Use the div id to give the div a 300px width */
+/* Step 23: Use the div id to change the bg_color */
+/* Step 26: Change from id selector(#) to class selector(.) */
+/* #menu */
+.menu {
+    /* Step 24: Change the width to 80% */
+    /* width: 300px; */
+    width: 80%;
+    background-color: burlywood;
+    /* Step 25: Center with margin-left/right & auto */
+    margin-left: auto;
+    margin-right: auto;
+    /* --------------------
+    -- /* Step 53: Add 20px padding left-right 
+    -- padding-left: 20px;
+    padding-right: 20px;
+    /* Step 54: Add 20px padding top/bottom 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ----------------------- */
+    /* Step 55: Combine all 4 paddings into one */
+    padding: 20px;
+    /* Step 56: Add a max-width of 500px */
+    max-width: 500px;
+}
+/* Step 89: Style the image as a block element and center */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Step 91: Close the gap between the image and the h2 with a negative margin */
+    margin-top: -25px;
+}
+/* Step 67: Style the hr height to 3px */
+hr {
+    /* height: 3px; */
+    /* Step 70: Adjust the height to account for the 1px border */
+    height: 2px;
+    /* Step 68: Set the bg_color to brown */
+    background-color: brown;
+    /* Step 69: Set the border to the same */
+    border-color: brown;
+}
+/* Step 75: Add spacing to the top of the bottom hr element */
+.bottom-line {
+    margin-top: 25px;
+}
+/* Step 58: Set the heading fonts to impact */
+/* Step 59: Allow serif fallback */
+h1, h2 {
+    font-family: Impact, serif;
+}
+/* Step 37: 'p' elements are block items, so add inline-block to the item classes */
+.item p {
+    display: inline-block;
+    /* Step 73: Set list margins (top/bottom) to 5px */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* Step 74: Apply an 18px font size */
+    font-size: 18px;
+}
+/* Step 38: give the flavor and price a 50% width */
+/* Step 39: Too much, pushing them back out to blocks - change to 49% */
+/* Step 33: Add text-align to the flavor class */
+/* Step 41: Now try 50% with them on the same line in the html file */
+/* Step 45: To prevent some wrapping change flavor width to 75% and price to 25% */
+/* Step 51: Add the dessert class with flavor */
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+    /* width: 50%; */
+    /* width: 49%; */
+}
+/* Step 35: Align price to the right */
+.price {
+    text-align: right;
+    width: 25%;
+    /* width: 50%; */
+    /* width: 49%; */
+}
+/* Step 77: Organize css file with a comment (footer section) */
+/* FOOTER */
+/* Step 78: Make footer text 14px */
+footer {
+    font-size: 14px;
+}
+/* Step 86: Adjust bottom margin of menu 'p' */
+.address {
+    margin-bottom: 5px;
+}
+/* Step 79: Set the anchor font color to black */
+a {
+    color: black;
+}
+/* Step 80: Set the font to change to grey once visited */
+/* Step 83: Keep the theme - change visited to black and active to brown */
+a:visited {
+    /* color: grey; */
+    color: black;
+}
+/* Step 81: Set hover color of link to brown */
+a:hover {
+    color: brown;
+}
+/* Step 82: Set active color to white */
+a:active {
+    /* color: white; */
+    color: brown;
+}

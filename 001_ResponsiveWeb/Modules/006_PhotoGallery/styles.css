@@ -1,0 +1,80 @@
+* {
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
+}
+
+/* .gallery {
+    width: 50%;
+    border: 5px solid red;
+}
+
+img {
+    width: 100%;
+    padding: 5px;
+    border: 5px solid blue;
+}  Left for ref */
+
+/*
+----- HTML -----
+Step  7: Target gallery and give it a width of 50% and a border 5px solid red.
+         Then give your img elements a width of 100%, padding of 5px and border of 5px solid blue
+Step  8: Use the global * and set box-sizing to content-box
+Step  9: Change box-sizing to border-box
+Step 10: Remove .gallery and img selectors (commented out for ref)
+Step 11: Create a .gallery img selector, give a width of 100% and max-width of 350px and height of 300px
+Step 12: Remove the margin from the body, set the font to sans-serif, set bg-color to #f5f6f7
+Step 13: Set the header text to center, and use transform to change to uppercase
+         Give a padding of 32px, bg-color to #0a0a23 text color to #fff and bottom border of 4px solid #fdb347
+Step 14: Create a .gallery selector and make it a flex container
+Step 15: Apply flex-direction to the gallery
+Step 16: Add flex-wrap to gallery
+Step 17: Center the gallery content with justify
+Step 18: Use align-items to center the content of .gallery vertically
+Step 19: Set gallery padding to 20px 10px then give a max-width 1400px and margin 0 auto
+Step 20: Use object-fit (cover), this will ensure the aspect ratio will remain intact
+Step 21: Give the gallery a gap of 16px
+Step 22: Apply a border-radius of 10px to the .gallery img selector
+Step 23: Create an ::after pseudo-selector on the .gallery with an empty string for content and a width of 350px
+----- HTML -----
+
+/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--- Step 1: Add the DOCTYPE declaration (emmet) -->
+<!--- Step 2: Add html tag with lang property set (emmet) -->
+<html lang="en">
+    <!--- Step 3: Add head and body tags (emmet) -->
+<head>
+    <!--- Step 4: Add title and meta tag with charset property (emmet) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!--- Step 5: Add a link to css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--- Step 6: Add a h1 -->
+    <h1>Registration Form</h1>
+    <!--- Step 7: Enter given text into a p element -->
+    <p>Please fill out this form with the required information</p>
+    <!--- Step 11: Add form element with target to given link -->
+    <!--- Step 12: Set the method attribute to post -->
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <!--- Step 13: Add three fieldsets to the form -->
+        <!--- Step 42: Give each submittable element a name -->
+        <fieldset> <!--- PERSONAL DETAILS -->
+            <!--- Step 14: Add 4 label elements -->
+            <!--- Step 15: Add given text to labels -->
+            <!--- Step 17: Nest inputs after the labels (ensuring there is a space after the :) -->
+            <!--- Step 18: Link the label and input with the for attribute -->
+            <!--- Step 19: Add the type attribute to the inputs -->
+            <!--- Step 21: Add the required attribute to the inputs-->
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name" required></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name" required></label>
+            <label for="email">Enter Your Email: <input id="email" type="email" name="email" required></label>
+            <!--- Step 22: Add a minlength as validation to the password-->
+            <!--- <label for="new-password">Create a New Password: <input id="new-password" type="password" minlength="8" required></label> Left for prosperity -->
+            <!--- Step 23: Replace the minlength with the pattern regex given -->
+            <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" name="password" required></label>
+        </fieldset>
+        <!--- Step 24: Add 2 labels to the 2nd fieldset -->
+        <fieldset> <!--- ACCOUNT TYPE -->
+            <!--- Step 25: Add a radio input to the labels -->
+            <!--- Step 26: Add given text to the labels-->
+            <!--- Step 27: Add a shared name to ensure only 1 can be selected-->
+            <!--- Step 28: Add a legend and have personal pre selected -->
+            <legend>Account type (required)</legend>
+            <!--- Step 29: Link the labels and inputs -->
+            <!--- Step 50: Give the inputs a class of inline -->
+            <label for="personal-account"><input checked type="radio" name="account-type" id="personal-account" class="inline"> Personal</label>
+            <label for="business-account"><input type="radio" name="account-type" id="business-account" class="inline"> Business</label>
+        </fieldset>
+        <fieldset> <!--- PROFILE PICTURE -->
+            <!--- Step 39: Link the below labels and inputs with given for/id attributes-->
+            <!--- Step 32: Add a file input with the given text -->
+            <label for="profile-picture">Upload a profile picture: <input type="file" id="profile-picture" name="profile-picture"></label>
+            <!--- Step 33: Add an 'age' input with min of 13 and max of 120 -->
+            <label for="age"> Input your age (years): <input type="number" min="13" max="120" id="age" name="age"></label>
+            <!--- Step 34: Create a select element with 5 options -->
+            <!--- Step 35: Nest the select in a label with the given text -->
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <!--- Step 36: Add given text to options -->
+                    <!--- Step 37: Add value attribute to the options -->
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio: 
+                <!--- Step 40: Add a size of 3x30 to the text area -->
+                <!--- Step 41: Add the given text as a placeholder -->
+                <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea>
+            </label>
+        </fieldset>
+        <!--- Step 30: Add a required checkbox for T&C agreement -->
+        <!--- Step 64: Make the t&c input inline with the class attribute -->
+        <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="t&c" class="inline" required>I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        <!--- Step 20: Add a submit input-->
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

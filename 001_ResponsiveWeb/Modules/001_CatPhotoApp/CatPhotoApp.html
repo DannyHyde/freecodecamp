@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos (This was removed in STEP 16) -->
+            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery.</p>
+            <a href="https://freecatphotoapp.com">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+            </a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other Cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input checked type="radio" id="indoor" name ="indoor-outdoor" value="indoor">Indoor</label>
+                    <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input checked type="checkbox" id="loving" name="personality" value="loving"> <label for="loving">Loving</label>
+                    <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</body>
+</html>
+
+<!---
+Steps taken to complete project:
+    Step  1:  Create h1
+    Step  2:  Create h2
+    Step  3:  Create p element under h2  
+    Step  4:  Add a comment
+    Step  5:  Add the main tag
+    Step  6:  Nesting (check spacing of current doc)
+    Step  7:  Add an image tag
+    Step  8:  Add an src attribute to the image tag
+    Step  9:  Add an alt attribute to the image tag
+    Step 10:  Add an anchor tag
+    Step 11:  Add text to the anchor
+    Step 12:  Put the anchor in a sentence
+    Step 13:  Add a p tag around the anchor
+    Step 14:  Make 'cute cats' into an anchor
+    Step 15:  Add a target to the anchor
+    Step 16:  Remove Comment
+    Step 17:  Turn image into a link
+    Step 18:  Adding a section element
+    Step 19:  Add second section element
+    Step 20:  Add h2 to new section
+    Step 21:  Add h3 to second section
+    Step 22:  Create unordered list (ul) after h3
+    Step 23:  Add to list with li
+    Step 24:  Add another image link
+    Step 25:  Add a figure element and nest the lasagna image
+    Step 26:  Add a figcaption
+    Step 27:  Emphasize love in figcaption
+    Step 28:  Add another h3
+    Step 29:  Add an ordered list (ol) after h3
+    Step 30:  Add a figure after ol
+    Step 31:  Nest an image in figure
+    Step 32:  Add an alt to image
+    Step 33:  Add figcaption to last image
+    Step 34:  Use the strong element
+    Step 35:  Add a third section
+    Step 36:  Add h2
+    Step 37:  Add form element
+    Step 38:  Add an action to the form
+    Step 39:  Nest an input element
+    Step 40:  Add text type to input
+    Step 41:  Add name to input
+    Step 42:  Add placeholder text
+    Step 43:  Add requirement to form
+    Step 44:  Add a submit button
+    Step 45:  Add type to the button
+    Step 46:  Add radio button
+    Step 47:  Nest button in a label element
+    Step 48:  Add an id to the radio input
+    Step 49:  Create a second radio
+    Step 50:  Add same name to radio (ensures only one choice)
+    Step 51:  Add value to radio buttons
+    Step 52:  Nest radios in a fieldset
+    Step 53:  Add a legend to the fieldset
+    Step 54:  Add a second fieldset
+    Step 55:  Add a legend
+    Step 56:  Add 'loving' checkbox
+    Step 57:  Add the id
+    Step 58:  Nest the text with a "for" attribute
+    Step 59:  Add name attribute to checkbox
+    Step 60:  Add another checkbox for Lazy
+    Step 61:  Add another for energetic
+    Step 62:  Add value attributes to the checkboxes
+    Step 63:  Make first radio and checkbox 'checked'
+    Step 64:  Add a footer
+    Step 65:  Add a p element to the footer
+    Step 66:  Add link to footer
+    Step 67:  Add a head element
+                -   As I'm using VSCode with emmet it's already sorted for me
+    Step 68:  Add title
+    Step 69:  Add lang element to html
+    Step 70: Add doctype tag to top
+    Step 71:  Add metadata tag
+    -->
