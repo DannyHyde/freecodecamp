@@ -1,0 +1,248 @@
+/* Below block was provided at the beginning
+console.log("Let's build a pyramid using JavaScript basics:");
+console.log("    #    ");
+console.log("   ###   ");
+console.log("  #####  ");
+console.log(" ####### ");
+console.log("#########");
+*/
+
+// Step 1: Read blurb and go to the next step.
+// Step 2: Use 'let' to declare a variable called character
+// Step 3: Initialize the character variable with the value "Hello"
+// Step 4: Single or double quotes work - change "Hello" to have single quotes
+//let character = 'Hello';
+// Step 5: Use console.log to print the value of character to the console
+//console.log(character);
+// Step 6: let allows for reassignment, so after the log reassign the value 'World' to character
+//character = "World";
+// Step 7: Now use console.log to show both strings
+//console.log(character);
+// Step 8: JavaScript uses camel case. Use this to declare another variable
+//let secondCharacter;
+// Step 10: Assign the string "Test" to second character
+// Step 11: You can assign one variable to another. Do this by assigning secondCharacter to character
+//secondCharacter = character; //"Test";
+// Step 9: secondCharacter is 'uninitialized', use console.log to show the value of the variable.
+//console.log(secondCharacter);
+// Step 12: Get rid of logs and secondCharacter variable (commented for reference)
+// Step 13: REVIEW - Use let to declare the given variables and initialize first, not the second
+//let profession = "teacher";
+//let age;
+//console.log(profession);
+//console.log(age);
+// Step 14: Remove step 13 code (commented for reference)
+// Step 15: Declare 'count' and assign it the number 8
+//let count = 8;
+// Step 16: We can do maths... Send 'count + 1' to the console
+//console.log(count + 1);
+// Step 17: Play with * - / then remove the log to move on (commented for reference)
+// Step 18: Arrays - Declare a empty array variable called rows
+// Step 19: Assign the strings: Naomi, Quincy and CamperChan.
+//let rows = ["Naomi", "Quincy", "CamperChan"];
+// Step 20: Use console.log and bracket notation to print the first value in rows
+//console.log(rows[0]);
+// Step 21: Update the third element of rows to be the number 10 then print rows to the console
+//rows[2] = 10;
+// Step 22: Update the rows[2] to dynamically access the last element in rows
+// Step 23: Remove rows[rows.length - 1] (commented for ref) and previous log
+//rows[rows.length -1] = 10;
+// Step 24: Initialize the cities array with given strings, print to the console then change the last element and log them again
+//let cities = ["London", "New York", "Mumbai"];
+//console.log(cities);
+//cities[cities.length -1] = "Mexico City"
+//console.log(cities);
+// Step 25: Remove last step (commented for more of a headache when looking at this file)
+// Step 26: Use push() to add "freeCodeCamp" to the end of rows
+//let rows = ["Naomi", "Quincy", "CamperChan"];
+//rows.push("freeCodeCamp");
+// Step 28: What does .push() do? assign it to pushed and print to the console
+//let pushed = rows.push("freeCodeCamp");
+//console.log(pushed);
+// Step 27: Create the variable popped assign it rows.pop() then print it to the console
+//let popped = rows.pop();
+//console.log(popped); 
+//console.log(rows);
+// Step 29: Play with .push() and .pop() then remove previous steps (commented )
+// Step 30: Set character to use double quotes and rows to be an empty array
+// Step 31: Change let keywords to const (const stops the reassignment of variables)
+// Step 32: change character to a # character rather than 'hello'
+
+// Step 117: Remove a load of comments
+// Step 118: Play, then set character to ! count to 10 and inverted to false to continue
+const character = "!";
+const count = 10;
+const rows = [];
+
+// Step 112: What if you could toggle between standard and inverted pyramid
+//           Declare a 'inverted' variable and assign it the value of true.
+let inverted = false;
+
+// Step 47: Declare the function 'padRow' without any parameters
+// Step 48: Add a function call after the padRow function
+// Step 49: Declare a call variable and assign it with your function
+// Step 52: Add name parameter to padRow
+// Step 61: Remove the name parameter from padRow, remove the logs from the function and remove name from the function call
+//function padRow(name){
+// Step 62: Remove the test declaration and the return from padRow
+// Step 63: Remove the call declaration and the log below it
+// Step 64: Give the function the two parameters given
+// Step 65: Use the return keyword to return the value of the character variable repeated rowNumber times
+function padRow(rowNumber, rowCount){
+    // Step 68: Concatenate a blank char string to the beginning and end of your repeat
+    // Step 69: Update the blank strings to be repeated 'rowCount - rowNumber' times
+    // Step 70: Update 'character' value to be repeated '2 * rowNumber -1' times
+    return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+    // Step 51: Use the return keyword to return "Hello!"
+    //return "Hello!";
+    // Step 53: Change padRow to return the name parameter
+    // Step 57: Amend padRow to return character and name concatenated
+    // Step 58: Declare a const 'test' assign 'testing' then try to log it outside of the function (remove the log to carry on)
+    //const test = "Testing";
+    // Step 59: Update your return to give the value of test
+    //return character + name;
+    // Step 60: Add "console.log("This works!")" below the return and above to show that the return keyword stops the function
+    //console.log("This works!");
+    //return test;
+    //console.log("This works!");
+}
+//console.log(test);
+//padRow();
+// Step 54: Pass your own name to padRow
+//const call = padRow("Danny");
+//const call = padRow();
+// Step 50: Add a print to see the value of call
+//console.log(call);
+
+// Step 55: Declare a sum variable, assign it the value calling addTwoNumbers with 5 & 10 then log sum
+// Step 56: With that review done remove step 55 code (commented)
+/*function addTwoNumbers(a, b) {
+    return a + b;
+}
+const sum = addTwoNumbers(5, 10);
+console.log(sum);*/
+
+
+
+// Step 33: FOR Loop - Construct a for loop with the given components "iterator", "condition", "iteration"
+// Step 34: Replace "iterator" with a let variable of i with the value of 0 (let i = 0)
+// Step 35: Replace "condition" with a check if i is less than count (i < count)
+// Step 36: Replace "iteration" with a reassignment statement to increase i by 1 (i = i + 1)
+// Step 37: This should run 8 times. print the value of i whilst it does
+// Step 71: Amend your loop to use the addition assignment operator (i += 1)
+// Step 72: As you're only increasing by 1 use the increment operator instead (i++)
+// Step 73: Rather than the 'i+1' in the padRow call start i at 1 
+//for (let i = 0; i < count; i++) {
+// Step 75: Now we're only running 7 times. Update the function with the 'less than or equal to' operator to get it to 8
+// Step 76: Umm this one is on comments... I think I've got that down.
+/* Step 77: Multi line comments ( comment out the for loop)
+for (let i = 1; i <= count; i++) {
+    //console.log(i);
+    // Step 38: Replace the log statement to push i to your rows array
+    //rows.push(i);
+    // Step 44: Instead of pushing i to rows push the character instead
+    // Step 45: Use .repeat() on character and give it i for the number
+    // Step 46: Add 1 to i in order to account for the 'off-by-one' error
+    // Step 66: Replace 'character.repeat(i + 1)' with a function call to padRow
+    // Step 67: Pass 'i = 1' and 'count' as the arguments given to the padRow call
+    // Step 74: Now were starting i at 1 we can remove the + 1 from the call
+    //rows.push(padRow(i + 1, count));
+    rows.push(padRow(i, count));
+} */
+
+// Step 78: IF Loops - Create an if loop with the boolean 'true' as the condition in the body print "Condition is true"
+// Step 79: Change the condition to be false
+// Step 80: It no longer prints as false is not true, but what about other values - try "false"
+// Step 81: Explanation of 'truthy' and 'falsy' values. Now try an empty string
+// Step 82: ELSE IF Loop - Add an 'else if' below your if to check if 5 is less than 10 and  log the statement "5 is less than 10"
+// Step 83: ELSE BLOCK - Add an else block to print "This is the else block" Change the < to > to make sure the else if fails
+/* if ("") {
+    console.log("Condition is true")
+} else if (5 > 10) {
+    console.log("5 is less than 10")
+} else {
+    console.log("This is the else block")
+} */
+
+// Step 84: Declare the two variables and assign the given values
+// Step 93: Now continueLoop is an unused variable so remove it
+//let continueLoop = false;
+// Step 97: The done variable is no longer needed remove it and the increment from the while loop
+//let done = 0;
+// Step 85: WHILE Loops - declare a while loop with continueLoop as the condition (empty body)
+// Step 86: AVOID INFINITE LOOPS - Use the increment operator to increase done inside your loop
+// Step 91: STRICT INEQUALITY - Update the while condition to check if 'done' is not equal to 'count'
+//while (continueLoop) {
+// Step 94: If done starts off larger than count we would end up with an infinite loop.  Amend to check that 'done' is less than or equal to 'count'
+//while (done !== count) {
+// Step 95: Update your condition to check if rows.length is less than count
+//while (done <= count)
+// Step 98: Use a multi line comment to remove the while loop
+/*
+while (rows.length < count) {
+    //done++;
+    
+    // Step 90: Push the result of calling padRow with done and count as the arguments to your rows array
+    // Step 96: Replace the done reference in your padRows call with 'rows.length + 1'
+    rows.push(padRow(rows.length + 1, count));
+
+    // Step 87: EQUALITY - Add an if to check if 'done' is equal to 'count' (==)
+    // Step 88: STRICT EQUALITY - Update the if with a strict equality operator (===)
+    // Step 89: Inside your if assign the boolean false to continueLoop
+    // Step 92: This is done in the while condition so remove the if loop
+    //if (done !== count) {
+    //    continueLoop = false;
+    //}
+}
+*/
+
+// Step 99: What if you made it upside-down or inverted..
+//          Create a new for loop, declare i with the value of count, then use false for your condition and iteration statements
+//for (let i = count; false; false) {
+// Step 100: To invert it we need to set the condition to run whilst i is greater than 0 change the condition to reflect this
+//for (let i = count; i > 0; false) {
+// Step 101: Change the iteration statement to subtract 1 from i. (i = i - 1)
+// Step 103: SUBTRACTION ASSIGNMENT - Amend the loop with a subtraction assignment (i -= 1)
+// Step 104: DECREMENT - As it's only a -1 change to use the decrement operator instead (i--)
+// Step 105: Multi comment this loop
+/* for (let i = count; i > 0; i--) {
+    // Step 102: push padRows(i count) into your rows array
+    rows.push(padRow(i, count));
+} */
+
+// Step 106: We've now looped forwards and backwards. Now for some array methods
+//           Declare a const of numbers assign an array with 1, 2, 3. then print it to the console
+// Step 109: Experimentation over... Remove the number array and the method calls (commented)
+/* const numbers = [1, 2, 3];
+// Step 107: Declare a variable unshifted and assign the resultof calling .unshift() on numbers passing it 5 as the argument and print
+// Step 108: Declare a variable shifted and assign the result of .shift() on numbers and print it
+const shifted = numbers.shift();
+console.log(shifted);
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers); */
+
+// Step 110: Now uncomment the first for loop (I'll just copy paste it to make this file even more ridiculous)
+// Step 111: Update the loop to add new rows to the beginning of the array
+for (let i = 1; i <= count; i++) {
+    // Step 113: Use an if statement to check if inverted is true
+    // Step 114: Move the unshift call into the if statement
+    // Step 115: Add an else block
+    if (inverted) {
+        rows.unshift(padRow(i, count));
+    } else {
+        // Step 116: Use .push() to make a standard pyramid if inverted is false
+        rows.push(padRow(i, count));
+    }
+}
+
+// Step 39: Declare the variable 'result' with let and assign it an empty string
+let result = "";
+// Step 41: Construct a 'for...of' loop  to iterate through your rows array
+// Step 42: Add an operation to concatenate the row value to the result value
+// Step 43: Add a second addition to add a new line character.
+for (const row of rows) {
+    result = result + row + "\n";
+}
+// Step 40: Print result to the console
+console.log(result);
