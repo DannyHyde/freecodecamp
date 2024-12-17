@@ -1,9 +1,9 @@
-/********************************************************
- *  This is the final script for the project copied out *
- *      of 'script.js.txt' as I'm weird and kept all    *
- *      code and steps for reference as I learn. I have *
- *      NO idea how I'm to use it, but there we go      *
- ********************************************************/
+/********************************************************************
+ *  This is the final script for the project copied out             *
+ *      of 'script.js.txt' as I'm weird and kept all                *
+ *      code and steps for reference as I learn. I have             *
+ *      NO idea how I'm to use it, but there we go                  *
+ *******************************************************************/
 
 const character = "!";
 const count = 10;
