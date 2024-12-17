@@ -1,0 +1,137 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Quiz">
+        <link rel="stylesheet" href="styles.css" />
+        <title>Building a Quiz</title>
+    </head>
+    <body>
+        <header>
+            <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp" id="logo">
+            <h1>HTML/CSS Quiz</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#student-info">INFO</a>
+                    </li>
+                    <li>
+                        <a href="#html-questions">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#css-questions">CSS</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">
+                        Student Information
+                    </h2>
+                    <div class="info">
+                        <label for="name">Enter Name</label>
+                        <!-- <input type="text" id="name" name="name" placeholder="John Smith"> Left for ref -->
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="info">
+                        <label for="email">Enter Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="info">
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">
+                        HTML Questions
+                    </h2>
+                    <div class="question-block">
+                        <h3><span class="sr-only">Question</span>1</h3>
+                        <fieldset class="question">
+                            <legend></legend>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <h3><span class="sr-only">Question</span>2</h3>
+                        <fieldset class="question">
+                            <legend></legend>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">
+                        CSS Questions
+                    </h2>
+                </section>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
+
+
+
+
+<!--
+Code provided at start of Module
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+    </body>
+</html>
+-->
+
+<!-- 
+    Step  1: Add a lang tag to your html element
+    Step  2: Add a meta tag with the charset attribute
+    Step  3: Add a meta tag with the viewport defined with content 
+             detailing width and scale
+    Step  4: Add a meta description to aid with accessibility & SEO
+    Step  5: Add a title tag
+    Step  6: Add header and main elements to your page
+    Step  7: Add an img, h1 & nav to your header
+    -- CSS --
+    Step 12: Add an unordered list with three given items to nav each
+             wrapped within an anchor tag
+    -- CSS --
+    Step 14: Within the main element create a form with 3 nested 
+             section elements and make the form submit to the given
+             link
+    Step 15: Give each section element the 'region' role
+    Step 16: Add the given 'aria-labelledby' attributes to the
+             sections. Then within each section nest a h2 with an id 
+             matching the aria label give suitable context to the h2
+    -- CSS --
+    Step 18: For the nav elements to navigate give them an anchor
+             linked to the h2 ids
+    Step 19: In student info add 3 divs (class of info) nest a label
+             and input in each
+    Step 20: link the labels and inputs in "info" by adding 'for' and
+             'id' attributes
+    Step 21: Give the inputs (info) appropriate type and name then
+             give the first an appropriate 'placeholder'
+    Step 22: Having a placeholder isn't best practice for accessibility
+             So remove it and rely on the label instead.
+    Step 23: In the 2nd 'section' add 2 divs with the class 'question-
+             block'. Within each div add a h3 with given text and 1
+             fieldset with the class question
+    Step 24: Append a span with the class sr-only to each h3
+    Step 25: In the spans add the text 'Question'
+    -- CSS --
+    Step 27: Within each fieldset nest 1 legend and 1 ul with 2 
+             li options
+-->
