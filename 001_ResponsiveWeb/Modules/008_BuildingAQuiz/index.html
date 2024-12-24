@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Quiz">
         <link rel="stylesheet" href="styles.css" />
-        <title>Building a Quiz</title>
+        <title>Accessibility Quiz</title>
     </head>
     <body>
         <header>
@@ -50,21 +50,41 @@
                     </h2>
                     <div class="question-block">
                         <h3><span class="sr-only">Question</span>1</h3>
-                        <fieldset class="question">
-                            <legend></legend>
-                            <ul>
-                                <li></li>
-                                <li></li>
+                        <fieldset class="question" name="question-one">
+                            <legend>Is this true or false?</legend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q1-a1">
+                                        <input type="radio" id="q1-a1" value="True" name="q1">
+                                        True
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q1-a2">
+                                        <input type="radio" id="q1-a2" value="False" name="q1">
+                                        False
+                                    </label>
+                                </li>
                             </ul>
                         </fieldset>
                     </div>
                     <div class="question-block">
                         <h3><span class="sr-only">Question</span>2</h3>
-                        <fieldset class="question">
-                            <legend></legend>
-                            <ul>
-                                <li></li>
-                                <li></li>
+                        <fieldset class="question" name="question-two">
+                            <legend>Is this false or true?</legend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q2-a1">
+                                        <input type="radio" id="q2-a1" value="True" name="q2">
+                                        True
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="q2-a2">
+                                        <input type="radio" id="q2-a2" value="False" name="q2">
+                                        False
+                                    </label>
+                                </li>
                             </ul>
                         </fieldset>
                     </div>
@@ -73,6 +93,16 @@
                     <h2 id="css-questions">
                         CSS Questions
                     </h2>
+                    <div class="formrow">
+                        <div class="question-block">
+                            <label>Can the CSS margin property accept negative values?</label>
+                        </div>
+                        <div class="answer"></div>
+                        <div class="question-block">
+                            <label>Do you have any questions:</label>
+                        </div>
+                        <div class="answer"></div>
+                    </div>
                 </section>
                 <button type="submit">Submit</button>
             </form>
@@ -104,10 +134,10 @@ Code provided at start of Module
     Step  5: Add a title tag
     Step  6: Add header and main elements to your page
     Step  7: Add an img, h1 & nav to your header
-    -- CSS --
+    --- CSS ---
     Step 12: Add an unordered list with three given items to nav each
              wrapped within an anchor tag
-    -- CSS --
+    --- CSS ---
     Step 14: Within the main element create a form with 3 nested 
              section elements and make the form submit to the given
              link
@@ -115,7 +145,7 @@ Code provided at start of Module
     Step 16: Add the given 'aria-labelledby' attributes to the
              sections. Then within each section nest a h2 with an id 
              matching the aria label give suitable context to the h2
-    -- CSS --
+    --- CSS ---
     Step 18: For the nav elements to navigate give them an anchor
              linked to the h2 ids
     Step 19: In student info add 3 divs (class of info) nest a label
@@ -131,7 +161,26 @@ Code provided at start of Module
              fieldset with the class question
     Step 24: Append a span with the class sr-only to each h3
     Step 25: In the spans add the text 'Question'
-    -- CSS --
+    --- CSS ---
     Step 27: Within each fieldset nest 1 legend and 1 ul with 2 
              li options
+    Step 28: Give each fieldset a name, give both ul elements a class
+             of 'answer-list', then use the legend to caption the
+             fieldset by placing a true/false question as the text
+    Step 29: Within each li nest a label then an input with the
+             appropriate type.
+    Step 30:  Add an id to the radio inputs so they can be linked to
+             their labels
+    Step 31: Add a 'for' attribute to your labels to link to the radio
+    Step 32: Give the label text that comes after the input, then give
+             the inputs a matching value (True/False)
+    Step 33: Stop both radios being selected with shared name attribute
+    --- CSS ---
+    Step 35: Final section: Nest a div with the class 'formrow' then
+             nest 4 more divs alternating the classes 'question-block'
+             and 'answer'
+    Step 36: Within div.question-block nest one label and add a css
+             related question to the label text.
+    Step 37: 
+
 -->

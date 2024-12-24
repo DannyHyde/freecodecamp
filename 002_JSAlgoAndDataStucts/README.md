@@ -13,5 +13,5 @@
 
 |   Unit    |   Description     |   Code    |
 |:----------|:-----------------:|----------:|
-|   Pyramid Generator   |   Starting Project that covers many of the basic language syntax  |   [script.js](/001_PyramidGenerator/script.js) |
-|   Gradebook   |   Review function fundamentals learned in the first unit  |   [script.js](/002_Gradebook/script.js)   |
+|   Pyramid Generator   |   Starting Project that covers many of the basic language syntax  |   [script.js](./Modules/001_PyramidGenerator/script.js) |
+|   Gradebook   |   Review function fundamentals learned in the first unit  |   [script.js](./Modules/002_Gradebook/script.js)   |

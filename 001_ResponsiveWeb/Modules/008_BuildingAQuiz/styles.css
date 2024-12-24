@@ -55,6 +55,10 @@ h2 {
     border-bottom: 4px solid #dfdfe2;
 }
 
+h3::before {
+    content: "Question #";
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -68,7 +72,7 @@ h2 {
 }
 
 /*
-    -- HTML --
+    --- HTML ---
     Step  8: Scale the image using its id, set max-width to 10rem or
              18vw
     Step  9: On the image, set given bg_color then set the
@@ -77,7 +81,7 @@ h2 {
              set given height and given bg_color then display as flex
     Step 11: set the given font color for the h1 and set the size to
              min(5vw, 1.2em)
-    -- HTML --
+    --- HTML ---
     Step 13: Use the '>' selector to target the unordered list elements
              and use flex to evenly space the nav children
     NOTE: The following code had been added to the css file -
@@ -86,11 +90,14 @@ h2 {
             max-width: 300px;
             height: 50px;
         }
-    -- HTML --
+    --- HTML ---
     Step 17: Change the fonts of both h1 and h2s to Verdana (with
              fallbacks). Then to the h2's add a bottom border of
              4px solid #dfdfe2
-    -- HTML --
+    --- HTML ---
     Step 26: Use the provided code to 'hide' sr-only tags
-    -- HTML --
+    --- HTML ---
+    Step 34: Target the 'before' pseudo-element of the 'h3' and give it
+             a content property of "Question #"
+    --- HTML ---
 */
